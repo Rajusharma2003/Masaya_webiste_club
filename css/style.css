@@ -947,7 +947,7 @@ header.header-mobile.header-light #menu-btn {
 /* ================================================== */
 
 section {
-    padding: 90px 0 90px 0;
+    padding: 0px 0 90px 0;
     position: relative;
 }
 
@@ -1175,7 +1175,7 @@ header.header-mobile {
     background: #fff;
     top: 0;
     height: 90px;
-    padding-top: 20px;
+    padding-top: 13px;
 }
 
 header.header-mobile .container{
@@ -2872,7 +2872,7 @@ a.btn-line {
     font-weight: 800;
     text-decoration: none;
     padding: 8px 40px;
-    font-size: 14px;
+    font-size: 15px;
     border: none;
 }
 
@@ -16091,9 +16091,8 @@ img {
 @media only screen and (max-width: 692px) {
     .banner{
         margin-top: -100px;
-        height: calc(60vh + 100px);
-    } 
-    
+        height: calc(40vh + 100px);
+    }
 }
 .slick-prev{
     position: absolute;
