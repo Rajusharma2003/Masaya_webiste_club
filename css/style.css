@@ -194,7 +194,7 @@ header.header-bg {
 }
 
 header.transparent {
-    background: white;
+    background: none;
 }
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
@@ -1143,7 +1143,7 @@ header.header-light {
 }
 
 header.smaller {
-    background: #ffffff;   
+    background: #000000;   
     /* black to white */
     border: none;
 }
@@ -1186,7 +1186,7 @@ header.header-mobile .container{
 }
 
 .dark-scheme header.header-mobile{
-     background: #ffffff;
+     background: none;
 }
 
 header.header-mobile.has-topbar {
@@ -16075,13 +16075,13 @@ img {
 }
 .banner{
     position: relative;
-    margin-top: 90px;
+    margin-top: -100px;
     height: calc(100vh + 100px);
 }
 
 .banner-content{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -16092,7 +16092,7 @@ img {
 @media only screen and (max-width: 692px) {
     .banner{
         margin-top: -100px;
-        height: calc(40vh + 100px);
+        height: calc(66vh + 100px);
     }
 }
 .slick-prev{
