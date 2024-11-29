@@ -194,11 +194,11 @@ header.header-bg {
 }
 
 header.transparent {
-    background: none;
+    background: white;
 }
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
-    background: rgba(255, 255, 255, 0.0);
+    background: rgba(255, 255, 255, 0);
 }
 
 header.autoshow {
@@ -952,7 +952,7 @@ section {
 }
 
 .dark-scheme section{
-    background: #000000;
+    background: #ffffff;
 }
 
 section.no-bg,
@@ -1143,7 +1143,8 @@ header.header-light {
 }
 
 header.smaller {
-    background: #000000;
+    background: #ffffff;   
+    /* black to white */
     border: none;
 }
 
@@ -1185,7 +1186,7 @@ header.header-mobile .container{
 }
 
 .dark-scheme header.header-mobile{
-     background: #000000;
+     background: #ffffff;
 }
 
 header.header-mobile.has-topbar {
@@ -10758,7 +10759,7 @@ i.big {
     padding:20px 30px;
     margin:0 auto;
     margin-bottom:20px;
-    border: solid 4px rgba(255, 255, 255, .2);
+    border: solid 4px rgba(18 10 10);
     position: relative;
     
 }
@@ -16074,13 +16075,13 @@ img {
 }
 .banner{
     position: relative;
-    margin-top: -100px;
+    margin-top: 90px;
     height: calc(100vh + 100px);
 }
 
 .banner-content{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -16119,3 +16120,65 @@ img {
     top: 50%;
     right: 0;
 }
+
+
+
+
+/* This is the new section */
+.gallery-area {
+    background-color: #f8f9fa;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .section-divider {
+    width: 100px;
+    height: 4px;
+    background-color: #ff4742;
+    margin-top: 10px;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover .caption {
+    opacity: 1;
+  }
+  
+  .caption ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .caption ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
